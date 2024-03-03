@@ -1,2 +1,2 @@
-# menu-lateral
- Criando um menu lateral animado com HTML, CSS e JS
+# Yuupi
+ Yuupi é um rede social, bem simples, onde é possivel realizar postagens e reagir a elas 

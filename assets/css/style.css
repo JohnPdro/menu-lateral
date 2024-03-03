@@ -1,0 +1,158 @@
+:root{
+    --menu-size: 350px;
+}
+
+*{
+    margin: 0;
+    padding: 0;
+    border: none;
+    box-sizing: border-box;
+    outline: none;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+
+body{
+    background-color: #000000;
+}
+
+header{
+    height: 40px;
+    background-color: #000000;
+    padding: 3px;
+    text-align: center;
+}
+
+.content{
+    max-width: 750px;
+    width: 100%;
+    margin: 0 auto;
+    margin-top: 50px;
+    padding: 0px 20px;
+    color: #ffffffbe;
+    border: solid 1px #16151a;
+}
+
+.contentBloco{
+    margin: 20px 0px;
+    padding: 20px;
+    border-bottom:  solid 1px #16151a;
+}
+
+#menu{
+    margin-left: -350px;
+}
+
+#btnMenu{
+    cursor: pointer;
+    padding: 5px;
+    transition: all .5s; 
+}
+
+#btnMenu:hover{
+    border-radius: 50%;
+    cursor: pointer;
+    background-color: #16151a;
+}
+
+#btnMenu:active{
+    background-color: #3463c0;
+}
+
+/* .btnClose{
+    text-align: right;
+}
+
+#btnClose{
+    cursor: pointer;
+    padding: 10px;
+    background-color: #330f0f;
+    color: #fff;
+    font-size: 20px;
+    font-weight: bold;
+    border-radius: 0% 25%;
+}
+
+#btnClose:active{
+    background-color: #c51b1b;
+} */
+
+.menu{
+    position: fixed; /* Faz com que o menu fique sempre no lugar fixo*/
+    top: 0;
+    width: var(--menu-size);
+    height: 100%;
+    background-color: #000000;
+    margin-top: 40px;
+}
+
+.menu ul{
+    list-style: none;
+    
+}
+
+.menu ul li{
+    display: block;
+    margin:0px 80px 0px 90px;
+}
+
+.menu ul li a{
+    transition: all .3s;
+    text-align: left;
+    display: block;
+    color: #fff;
+    font-size: 19px;
+    text-decoration: none;
+    padding: 10px;
+    margin-bottom: 10px;
+}
+
+.menu ul li a:hover{
+    background-color: #16151a;
+    border-radius: 20px;
+}
+
+.icone{
+    display: inline-block;
+    
+}
+
+
+
+.contentExtra{
+    display: none;
+    margin-top: 40px;
+    position: fixed;
+    top: 0;
+    right: 0;
+    width: 350px;
+    height: 100%;
+    padding: 20px;
+    background-color: #000000;
+}
+
+.bloco{
+    background-color: #16151a;
+    border-radius: 10px;
+    padding: 10px;
+    margin: 10px 50px 25px 0px;
+    color: #ffffffbe;
+}
+
+.bloco:hover{
+    background-color: #1f1e25;
+    box-shadow: 4px 4px 3px #111111;
+}
+
+
+
+.effect{
+    transition: margin .4s;
+}
+
+
+@media (min-width: 768px){
+    .contentExtra{
+        display: block;
+    }
+
+}
